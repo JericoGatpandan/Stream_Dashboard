@@ -23,7 +23,7 @@ function Header({ isMinimized, toggleSidebar }) {
             </div>
 
             {/* Center section with title */}
-            <h1 className="flex-1 text-black text-[32px] font-bold font-poppins leading-6 text-center">
+            <h1 className="flex-1 text-[#5D7285] text-[32px] font-bold font-poppins leading-6 text-center">
                 NAGA CITY RIVER MONITORING SYSTEM
             </h1>
 
