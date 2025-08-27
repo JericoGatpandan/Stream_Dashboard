@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Sidebar from './components/Layout/Sidebar'
 import Header from './components/Layout/Header'
+import Dashboard from './components/Dashboard/Dashboard'
 
 function App() {
-  const [isMinimized, setIsMinimized] = useState(false)
+  const [isMinimized, setIsMinimized] = useState(true)
 
   const toggleSidebar = () => {
     setIsMinimized(!isMinimized)
@@ -20,8 +21,8 @@ function App() {
         {/* Main Content */}
         <div className="flex-1 flex flex-col">
           <Header isMinimized={isMinimized} toggleSidebar={toggleSidebar} />
-          <main className="flex-1 overflow-auto p-8">
-            {/* Your main content goes here */}
+          <main className="flex-1 overflow-auto p-0 w-full">
+            <Dashboard />
           </main>
         </div>
       </div>
