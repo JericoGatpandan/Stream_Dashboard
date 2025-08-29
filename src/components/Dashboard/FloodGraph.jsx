@@ -3,7 +3,7 @@ import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tool
 import { Search } from 'lucide-react';
 
 function FloodGraph({ data }) {
-    // Sample data structure - replace with your actual data
+    // Sample data structure
     const sampleData = [
         { time: '00:00', KGE: 0.85, NSE: 0.82, CRPS: 0.15, Coverage: 0.92 },
         { time: '06:00', KGE: 0.87, NSE: 0.84, CRPS: 0.14, Coverage: 0.93 },
@@ -12,8 +12,8 @@ function FloodGraph({ data }) {
     ];
 
     return (
-        <div className="w-full h-full bg-white p-4">
-            <div className='flex justify-between items-center pb-1.5'>
+        <div className="w-full h-[600px] bg-white p-4 shadow-lg rounded-lg">
+            <div className='flex justify-between items-center pb-3 pt-0 p-8 '>
                 <div className="mt-4 text-[#5D7285] text-[20px] font-poppins font-semibold leading-[28.1px] tracking-[0.2px]">
                     Flood Exceedance Probability & Hydrograph
                 </div>
@@ -23,7 +23,7 @@ function FloodGraph({ data }) {
                     <input type="search" name="search" id="" placeholder='Search' />
                 </div>
             </div>
-            <div className="h-[366px]">
+            <div className="h-[500px]">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart
                         data={data || sampleData}

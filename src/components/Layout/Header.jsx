@@ -1,5 +1,5 @@
 import React from 'react'
-import { BellDot, UserCircle, PanelRightOpen, PanelLeftOpen } from 'lucide-react'
+import { Bell, UserCircle, PanelRightOpen, PanelLeftOpen } from 'lucide-react'
 
 
 function Header({ isMinimized, toggleSidebar }) {
@@ -9,15 +9,17 @@ function Header({ isMinimized, toggleSidebar }) {
             <div className="flex items-center">
                 {isMinimized ? (
                     <PanelLeftOpen
-                        size={24}
+                        size={30}
                         className="text-[#5D7285] cursor-pointer transition-transform hover:scale-110"
                         onClick={toggleSidebar}
+                        style={{strokeWidth: 2.5}}
                     />
                 ) : (
                     <PanelRightOpen
-                        size={24}
+                        size={30}
                         className="text-[#5D7285] cursor-pointer transition-transform hover:scale-110"
                         onClick={toggleSidebar}
+                        style={{strokeWidth: 2.5}}
                     />
                 )}
             </div>
@@ -29,7 +31,7 @@ function Header({ isMinimized, toggleSidebar }) {
 
             {/* Right section with date, notification and profile */}
             <div className="flex items-center gap-[88px]">
-                <div className="w-[247px] text-center text-[#5D7285] text-2xl font-medium font-poppins">
+                <div className="w-[247px] text-center text-[#5D7285] text-2xl font-bold font-poppins">
                     {new Date().toLocaleDateString('en-US', {
                         day: 'numeric',
                         month: 'long',
@@ -38,7 +40,7 @@ function Header({ isMinimized, toggleSidebar }) {
                 </div>
 
                 <div className="relative">
-                    <BellDot size={40} className="text-[#0C7FDA]" />
+                    <Bell size={40} className="text-[#0C7FDA]" style={{strokeWidth: 2.5, fill: "#0C7FDA"}}/>
                     <div className="w-[13px] h-[13px] absolute right-0 top-0 bg-[#4ADB6A] rounded-full" />
                 </div>
 

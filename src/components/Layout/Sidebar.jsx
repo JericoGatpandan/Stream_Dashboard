@@ -33,9 +33,9 @@ export default function Sidebar({ isMinimized }) {
                     {/* Active item */}
                     <div
                         className={`${baseItem} ${isMinimized ? "justify-center p-2" : "w-full p-2"
-                            } bg-[#E9F5FE]`}
+                            } bg-[#E9F5FE]`} 
                     >
-                        <Home size={32} className="text-[#0C7FDA] flex-shrink-0" />
+                        <Home size={32} className="text-[#0C7FDA] flex-shrink-0" style={{strokeWidth: 2.5}}/>
                         {!isMinimized && (
                             <>
                                 <span className="text-[#0C7FDA] font-semibold">
@@ -55,9 +55,9 @@ export default function Sidebar({ isMinimized }) {
                             : "w-full p-2"
                             }`}
                     >
-                        <Map size={32} className="text-[#5D7285] flex-shrink-0" />
+                        <Map size={32} className="text-[#5D7285] flex-shrink-0" style={{strokeWidth: 2.5}}/>
                         {!isMinimized && (
-                            <span className="text-[#5D7285] font-semibold">Maps</span>
+                            <span className="text-[#5D7285]">Maps</span>
                         )}
                     </div>
 
@@ -68,7 +68,7 @@ export default function Sidebar({ isMinimized }) {
                             : "w-full p-2"
                             }`}
                     >
-                        <Dam size={32} className="text-[#5D7285] flex-shrink-0" />
+                        <Dam size={32} className="text-[#5D7285] flex-shrink-0" style={{strokeWidth: 2.5}}/>
                         {!isMinimized && (
                             <span className="text-[#5D7285]">River</span>
                         )}
@@ -81,7 +81,7 @@ export default function Sidebar({ isMinimized }) {
                             : "w-full p-2"
                             }`}
                     >
-                        <BrainCircuit size={32} className="text-[#5D7285] flex-shrink-0" />
+                        <BrainCircuit size={32} className="text-[#5D7285] flex-shrink-0" style={{strokeWidth: 2.5}}/>
                         {!isMinimized && (
                             <span className="text-[#5D7285]">AI Analysis</span>
                         )}
@@ -94,7 +94,7 @@ export default function Sidebar({ isMinimized }) {
                             : "w-full p-2"
                             }`}
                     >
-                        <TriangleAlert size={32} className="text-[#5D7285] flex-shrink-0" />
+                        <TriangleAlert size={32} className="text-[#5D7285] flex-shrink-0" style={{strokeWidth: 2.5}}/>
                         {!isMinimized && (
                             <>
                                 <span className="text-[#5D7285]">Weather Alerts</span>
@@ -112,7 +112,7 @@ export default function Sidebar({ isMinimized }) {
                             : "w-full p-2"
                             }`}
                     >
-                        <Settings size={32} className="text-[#5D7285] flex-shrink-0" />
+                        <Settings size={32} className="text-[#5D7285] flex-shrink-0" style={{strokeWidth: 2.5}}/>
                         {!isMinimized && (
                             <span className="text-[#5D7285]">Settings</span>
                         )}
@@ -128,7 +128,7 @@ export default function Sidebar({ isMinimized }) {
                         : "w-full gap-3 hover:bg-[#4E5E6A]"
                         }`}
                 >
-                    <LogOut size={32} className="flex-shrink-0" />
+                    <LogOut size={32} className="flex-shrink-0" style={{strokeWidth: 2.5}}/>
                     {!isMinimized && (
                         <span className="font-semibold">Logout</span>
                     )}

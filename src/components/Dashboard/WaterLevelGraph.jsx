@@ -2,7 +2,7 @@ import React from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
 function WaterLevelGraph() {
-    // Sample data - replace with your actual data
+    // Sample data
     const data = [
         { time: '18:00', level: 2.5 },
         { time: '19:00', level: 2.8 },
@@ -37,7 +37,7 @@ function WaterLevelGraph() {
         <div className="w-full h-[400px] bg-white rounded-[10px] shadow-md relative"> {/* Increased height */}
             <div className="w-full h-[394px] mx-auto my-1 bg-[#E9F5FE] rounded-[10px] border border-black"> {/* Adjusted inner height */}
                 {/* Water Level Label */}
-                <div className="absolute left-[6px] top-[171px] transform -rotate-90 text-[#0C7FDA] text-[13px] font-medium">
+                <div className="absolute left-[6px] top-[171px] transform -rotate-90 text-[#0C7FDA] text-[18px] font-medium">
                     Water Level
                 </div>
 

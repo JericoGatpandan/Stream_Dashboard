@@ -3,7 +3,7 @@ import { AlertTriangle } from 'lucide-react'
 
 function FloodAlert() {
     return (
-        <div className="w-full h-[129px] bg-[#F64B3C] rounded-[20px] relative overflow-hidden p-4">
+        <div className="w-full h-[150px] bg-[#F64B3C] rounded-[20px] relative overflow-hidden p-4">
             {/* Alert Icon */}
             <div className="absolute left-[22px] top-[28px] z-10">
                 <AlertTriangle
@@ -21,7 +21,7 @@ function FloodAlert() {
                 <p className="text-white text-[14px] font-poppins font-normal leading-[18.2px] tracking-[0.28px]">
                     P. Diaz Street, Sta. Cruz Naga City
                 </p>
-                <button className="w-[98px] h-[20px] bg-white rounded-[5px] flex items-center justify-center mt-1">
+                <button className="w-[100px] h-[20px] hover:bg-blue-200 bg-white rounded-[5px] p-4 flex items-center justify-center mt-1">
                     <span className="text-[#5D7285] text-[13.33px] font-poppins font-normal leading-[24px] tracking-[0.13px]">
                         More Info
                     </span>
