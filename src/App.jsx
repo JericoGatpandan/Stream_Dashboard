@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#F5F6F8]">
       <div className="flex h-screen">
-        {/* Sidebar - dynamic width */}
+        {/* Sidebar*/}
         <div className={`transition-all z-0 duration-300 ease-in-out ${isMinimized ? 'w-[100px]' : 'w-[325px]'} flex-shrink-0`}>
           <Sidebar isMinimized={isMinimized} />
         </div>
